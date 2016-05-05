@@ -403,7 +403,7 @@ def summarize_processes(processes):
 
     print("path counts")
     for (path, count) in sorted(counts.items(), key=lambda p:p[1], reverse=True):
-        print("  - %s: %d" % (path, count))
+        print("  - %s: %d" % (repr(path), count))
     print("-------------------------")
 
     # TODO: seems to be broken due to timezones?
