@@ -49,7 +49,7 @@ class Process(object):
 
     def __str__(self):
         return "Process(%s, cmd=%s, hashes=%s, pid=%x, ppid=%x, begin=%s, end=%s" % (
-                self.path, self.cmdline, self.hashes, self.pid, self.ppid,
+                repr(self.path), self.cmdline, self.hashes, self.pid, self.ppid,
                 self.begin.isoformat(), self.end.isoformat())
 
     # TODO: move serialize, deserialize here
